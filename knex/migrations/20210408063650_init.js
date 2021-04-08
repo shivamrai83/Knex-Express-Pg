@@ -3,6 +3,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('knex-table',table=>{
       table.increments('id');
       table.string('name').notNullable().unique();
+      table.string('email').notNullable().unique();
   })
 };
 
