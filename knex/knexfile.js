@@ -3,11 +3,11 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'postgresql',        //database Name (like => pg, mysql....etc)
     connection: {
-      database: 'knex',
-      user:     'visitor',
-      password: 'Thinksys@123'
+      database: 'knex',         //name of database in the Databases section in PG admin 4.
+      user:     'visitor',      //username of the user while creatin the database.
+      password: 'Thinksys@123'  //password of the particular user.
     },
     pool: {
       min: 2,
